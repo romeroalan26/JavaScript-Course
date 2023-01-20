@@ -220,7 +220,7 @@ if (dolphinsScore > koalasScore && dolphinsScore >= 100) {
   their average is not over 100, so there's no winner.`);
 }
 
-*/
+
 
 // LECTURE: The switch Statement
 // 1. Use a switch statement to log the following string for the given 'language':
@@ -254,3 +254,5 @@ switch (language) {
     console.log(`Great language too 😁`);
     break;
 }
+
+*/
