@@ -7,7 +7,7 @@
 // capital city is Helsinki'
 // 2. Call this function 3 times, with input data for 3 different countries. Store the
 // returned values in 3 different variables, and log them to the console
-*/
+
 
 function describeCountry(country, population, capitalCity) {
   const description = `${country} has ${population} million people and its
@@ -21,3 +21,4 @@ const descriptionMade = describeCountry(
   `Santo Domingo`
 );
 console.log(descriptionMade);
+*/
