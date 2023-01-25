@@ -89,7 +89,7 @@ function fruitProcessor(apples, oranges) {
 }
 console.log(fruitProcessor(2, 3));
 
-*/
+
 
 const calcAge = function (birthYear) {
   return 2037 - birthYear;
@@ -100,8 +100,10 @@ const yearsUntilRetirement = function (birthYear, firstName) {
   const retirement = 65 - age;
 
   if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years`);
     return retirement;
   } else {
+    console.log(`${firstName} has already retired`);
     return -1;
   }
 
@@ -111,3 +113,26 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement(1991, `Jonas`));
 console.log(yearsUntilRetirement(1970, `Mike`));
+
+/*Function declaration: function that can be used before it's called
+Function expression: essentially a function value stored in a variable
+Arrow function: great for a quick one-line functions. Has no this keyword (more later...)
+Three different ways of writing functions, but they all work in a similar 
+way: receive input data, transofrm data and then output data*/
+const friend1 = `Pedro`;
+const friend2 = `Manuel`;
+const friend3 = `Paul`;
+
+const friends = [`Michael`, `Steven`, `Peter`];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = `Jay`;
+console.log(friends);
