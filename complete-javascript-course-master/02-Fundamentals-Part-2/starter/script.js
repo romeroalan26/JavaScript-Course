@@ -118,15 +118,13 @@ console.log(yearsUntilRetirement(1970, `Mike`));
 Function expression: essentially a function value stored in a variable
 Arrow function: great for a quick one-line functions. Has no this keyword (more later...)
 Three different ways of writing functions, but they all work in a similar 
-way: receive input data, transofrm data and then output data*/
+way: receive input data, transofrm data and then output data
 const friend1 = `Pedro`;
 const friend2 = `Manuel`;
 const friend3 = `Paul`;
 
 const friends = [`Michael`, `Steven`, `Peter`];
 console.log(friends);
-
-const years = new Array(1991, 1984, 2008, 2020);
 
 console.log(friends[0]);
 console.log(friends[2]);
@@ -136,3 +134,123 @@ console.log(friends[friends.length - 1]);
 
 friends[2] = `Jay`;
 console.log(friends);
+
+const firstName = `Jonas`;
+const jonas = [firstName, `Schedmann`, 2037 - 1991, `teacher`, friends];
+console.log(jonas);
+console.log(jonas.length);
+
+// Exercise
+
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge1(years[0]);
+const age2 = calcAge1(years[1]);
+const age3 = calcAge1(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge1(years[0]),
+  calcAge1(years[1]),
+  calcAge1(years[years.length - 1]),
+];
+
+console.log(ages);
+
+
+const friends = [`Michael`, `Steven`, `Peter`];
+
+// Add elements
+const newLength = friends.push(`Jay`);
+console.log(friends);
+console.log(newLength);
+
+friends.unshift(`John`);
+console.log(friends);
+
+// Remove elements
+
+friends.pop(); // last
+console.log(friends);
+const popped = friends.pop();
+friends.shift(); // First
+console.log(friends);
+
+console.log(friends.indexOf(`Steven`));
+console.log(friends.indexOf(`Bob`));
+
+console.log(friends.includes(`Steven`));
+console.log(friends.includes(`Bob`));
+
+
+
+// Introduction to objects
+
+const jonas = {
+  firstName: `Jonas`,
+  lastName: `Schmedmann`,
+  age: 2037 - 1991,
+  job: `teacher`,
+  friends: [`Michael`, `Peter`, `Stevem`],
+};
+
+
+// Dot Vs. Bracket notation
+
+const jonas = {
+  firstName: `Jonas`,
+  lastName: `Schmedmann`,
+  age: 2037 - 1991,
+  job: `teacher`,
+  friends: [`Michael`, `Peter`, `Stevem`],
+};
+// console.log(jonas);
+
+// console.log(jonas.lastName);
+// console.log(jonas[`lastName`]);
+
+// const nameKey = `Name`;
+// console.log(jonas[`first` + nameKey]);
+// console.log(jonas[`last` + nameKey]);
+
+// console.log(jonas.`last` + nameKey )
+// const interestedIn = prompt(
+//   `What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends`
+// );
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn]);
+// } else {
+//   console.log(
+//     `Wrong request! Choose between firstName, lastName, age, job, and friends`
+//   );
+// }
+
+jonas.location = `Portugal`;
+jonas[`twitter`] = `@jonasschmedtman`;
+console.log(jonas);
+console.log(jonas.friends.length);
+
+// Challenge
+// Jonas has 3 friends and his best friend is Michael.
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is ${jonas.friends[0]}`
+);
+
+*/
+
+const jonas = {
+  firstName: `Jonas`,
+  lastName: `Schmedmann`,
+  age: 1991,
+  job: `teacher`,
+  friends: [`Michael`, `Peter`, `Stevem`],
+  hasDriverLicense: true,
+
+  calcAge: function (birthYear) {
+    return 2037 - birthYear;
+  },
+};
