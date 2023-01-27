@@ -240,17 +240,51 @@ console.log(
   `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is ${jonas.friends[0]}`
 );
 
-*/
+
 
 const jonas = {
   firstName: `Jonas`,
   lastName: `Schmedmann`,
-  age: 1991,
+  birthYear: 1991,
   job: `teacher`,
   friends: [`Michael`, `Peter`, `Stevem`],
   hasDriverLicense: true,
 
-  calcAge: function (birthYear) {
-    return 2037 - birthYear;
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+  // calcAge: function () {
+  //   return 2037 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} ${
+      this.lastName
+    }is a ${this.calcAge()} years old ${this.job}, and he has ${
+      this.hasDriverLicense ? `haas` : `no`
+    } a driver's license. He has ${
+      this.friends.length
+    } friends, and his best friend is ${this.friends[1]}. `;
   },
 };
+console.log(jonas.getSummary());
+
+*/
+
+//46 Iteration: The for Loop
+
+console.log(`Lifting weights repatition 1 🏋️`);
+console.log(`Lifting weights repatition 1 🏋️`);
+console.log(`Lifting weights repatition 1 🏋️`);
+console.log(`Lifting weights repatition 1 🏋️`);
+console.log(`Lifting weights repatition 1 🏋️`);
+console.log(`Lifting weights repatition 1 🏋️`);
+console.log(`Lifting weights repatition 1 🏋️`);
+console.log(`Lifting weights repatition 1 🏋️`);
+console.log(`Lifting weights repatition 1 🏋️`);
+console.log(`Lifting weights repatition 1 🏋️`);
