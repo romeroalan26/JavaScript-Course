@@ -109,11 +109,13 @@
 
 //   Sub-problems.
 // - Create a fuction 'printForecast' that takes an array 'arr'.
-const arr = [3, 21, 27];
-const printForecast = function (arr) {
+
+const printForecast = (arr) => {
+  let str = "";
   for (let i = 0; i < arr.length; i++) {
-    for (let k = 1; i < arr.length; k++) {
-      console.log(i, k);
-    }
+    str = str + `${arr[i]}°C in ${i + 1} days ... `;
   }
+  console.log(str);
 };
+
+printForecast([12, 5, -5, 0, 4]);
