@@ -110,12 +110,12 @@
 //   Sub-problems.
 // - Create a fuction 'printForecast' that takes an array 'arr'.
 
-const printForecast = (arr) => {
-  let str = "";
-  for (let i = 0; i < arr.length; i++) {
-    str = str + `${arr[i]}°C in ${i + 1} days ... `;
-  }
-  console.log(str);
-};
+// const printForecast = (arr) => {
+//   let str = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     str = str + `${arr[i]}°C in ${i + 1} days ... `;
+//   }
+//   console.log(str);
+// };
 
-printForecast([12, 5, -5, 0, 4]);
+// printForecast([12, 5, -5, 0, 4]);
