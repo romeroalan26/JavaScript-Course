@@ -200,11 +200,12 @@ document.body.append(document.createElement('textarea'));
 document.body.append(document.createElement('button'));
 
 // ***SOLUTION***
-
+*/
 
 // const convertStr = function (name) {
 //   const [firstName, lastName] = name.split('_');
 //   const newName = [
+
 //     firstName.toLowerCase().trim(),
 //     lastName[0].toUpperCase() + lastName.toLowerCase().slice(1),
 //   ].join('');
@@ -230,4 +231,3 @@ document.querySelector('button').addEventListener('click', function () {
     console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
   }
 });
-*/
