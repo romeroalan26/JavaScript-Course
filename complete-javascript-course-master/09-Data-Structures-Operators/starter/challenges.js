@@ -200,7 +200,7 @@ document.body.append(document.createElement('textarea'));
 document.body.append(document.createElement('button'));
 
 // ***SOLUTION***
-*/
+
 
 // const convertStr = function (name) {
 //   const [firstName, lastName] = name.split('_');
@@ -231,3 +231,5 @@ document.querySelector('button').addEventListener('click', function () {
     console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
   }
 });
+
+*/
